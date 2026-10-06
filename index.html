@@ -12,15 +12,15 @@ header{background:#071b3a;color:white;padding:24px 7%;display:flex;justify-conte
 .hero{background:#071b3a;color:white;padding:70px 7% 85px}.hero h1{font-size:48px;max-width:720px;margin:0 0 18px}.hero p{font-size:20px;line-height:1.6;max-width:650px;color:#dbe5f3}
 section{padding:55px 7%;max-width:1100px;margin:auto}h2{text-align:center;font-size:32px;margin-top:0}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border-radius:14px;padding:28px;box-shadow:0 5px 20px #00000012}.card h3{font-size:23px}.price{font-size:32px;font-weight:800;color:#071b3a}
-.contact{background:white;border-radius:14px;padding:30px;text-align:center;box-shadow:0 5px 20px #00000012}.contact a{color:#071b3a;font-weight:700;text-decoration:none}
+.warning{background:#fff7ed;border-left:6px solid #f59e0b;border-radius:14px;padding:28px;box-shadow:0 5px 20px #00000012}.warning h2{margin-bottom:14px}.warning p{line-height:1.6;color:#374151;text-align:center;max-width:800px;margin:10px auto}.warning-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px auto;max-width:850px}.warning-grid div{background:white;border-radius:10px;padding:14px;text-align:center}.before-after{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.ba-card{background:white;border-radius:14px;padding:16px;box-shadow:0 5px 20px #00000012;text-align:center}.ba-card svg{width:100%;height:auto;border-radius:10px}.ba-label{font-weight:800;letter-spacing:1px;color:#071b3a;margin:4px 0 10px}.ba-card p{color:#4b5563;margin:12px 0 4px}.contact{background:white;border-radius:14px;padding:30px;text-align:center;box-shadow:0 5px 20px #00000012}.contact a{color:#071b3a;font-weight:700;text-decoration:none}
 footer{background:#071b3a;color:#cbd5e1;text-align:center;padding:25px}
-@media(max-width:750px){.cards{grid-template-columns:1fr}.hero h1{font-size:38px}header{padding:20px 5%}.hero,section{padding-left:5%;padding-right:5%}}
+@media(max-width:750px){.cards{grid-template-columns:1fr}.warning-grid{grid-template-columns:1fr 1fr}.before-after{grid-template-columns:1fr}.hero h1{font-size:38px}header{padding:20px 5%}.hero,section{padding-left:5%;padding-right:5%}}
 </style>
 </head>
 <body>
 <header>
 <div class="logo">JS BINS</div>
-<a class="btn" href="tel:6892961540">Call Now</a>
+<a class="btn" href="tel:+14077358047">Call Now</a>
 </header>
 
 <div class="hero">
@@ -32,19 +32,40 @@ footer{background:#071b3a;color:#cbd5e1;text-align:center;padding:25px}
 <section>
 <h2>Our Services</h2>
 <div class="cards">
-<div class="card"><h3>Weekly Cleaning</h3><p>Regular professional cleaning to help keep your bin fresh and sanitary.</p><div class="price">Contact Us</div></div>
-<div class="card"><h3>Biweekly Cleaning</h3><p>A convenient every-two-weeks service for consistent bin maintenance.</p><div class="price">Contact Us</div></div>
-<div class="card"><h3>Monthly Cleaning</h3><p>Monthly professional bin cleaning for simple, reliable maintenance.</p><div class="price">Contact Us</div></div>
+<div class="card"><h3>Basic Service</h3><p>First deep cleaning for one trash bin, designed to remove buildup, odors and grime.</p><div class="price">$49.99</div></div>
+<div class="card"><h3>Weekly Cleaning</h3><p>Regular professional cleaning to help keep your bin fresh and sanitary.</p><div class="price">$59.99 / month</div></div>
+<div class="card"><h3>Biweekly Cleaning</h3><p>A convenient every-two-weeks service for consistent bin maintenance.</p><div class="price">$44.99 / month</div></div>
+<div class="card"><h3>Monthly Cleaning</h3><p>Monthly professional bin cleaning for simple, reliable maintenance.</p><div class="price">$34.99 / month</div></div>
+</div>
+</section>
+
+<section>
+<div class="warning">
+<h2>⚠️ Important: Keep Your Bins Clean</h2>
+<p>Trash bins can collect food residue, moisture and organic buildup that may contribute to bacteria, mold and unpleasant odors.</p>
+<div class="warning-grid"><div>🦠 <strong>Bacteria</strong></div><div>🍄 <strong>Mold</strong></div><div>🗑️ <strong>Residue</strong></div><div>👃 <strong>Bad odors</strong></div></div>
+<p>JS Bins cleans and sanitizes your bins to help reduce the buildup of bacteria, mold, residue and unpleasant odors—keeping your bins cleaner and fresher.</p>
+</div>
+</section>
+
+<section>
+<h2>Before &amp; After</h2>
+<p style="text-align:center;max-width:700px;margin:0 auto 28px;color:#4b5563;line-height:1.6">See the difference a professional JS Bins cleaning can make.
+</p>
+<div class="before-after">
+<div class="ba-card"><div class="ba-label">BEFORE</div><svg viewBox="0 0 520 300" role="img" aria-label="Illustration of a dirty trash bin before cleaning"><rect width="520" height="300" rx="18" fill="#e5e7eb"/><ellipse cx="260" cy="255" rx="145" ry="18" fill="#9ca3af"/><rect x="170" y="78" width="180" height="165" rx="22" fill="#4b5563"/><rect x="155" y="62" width="210" height="28" rx="12" fill="#374151"/><circle cx="215" cy="150" r="18" fill="#111827"/><circle cx="300" cy="182" r="14" fill="#111827"/><path d="M190 215 Q260 175 330 215" fill="none" stroke="#111827" stroke-width="12" stroke-linecap="round"/><circle cx="385" cy="115" r="12" fill="#92400e"/><circle cx="130" cy="185" r="10" fill="#92400e"/></svg><p>Dirty, stained and full of buildup.</p></div>
+<div class="ba-card"><div class="ba-label">AFTER</div><svg viewBox="0 0 520 300" role="img" aria-label="Illustration of a clean trash bin after cleaning"><rect width="520" height="300" rx="18" fill="#e0f2fe"/><ellipse cx="260" cy="255" rx="145" ry="18" fill="#93c5fd"/><rect x="170" y="78" width="180" height="165" rx="22" fill="#1f2937"/><rect x="155" y="62" width="210" height="28" rx="12" fill="#111827"/><path d="M215 145 l22 22 42-48" fill="none" stroke="#22c55e" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path d="M145 105 l-12-18 M375 105 l12-18 M150 150 l-20 0 M370 150 l20 0" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/></svg><p>Clean, sanitized and fresh.</p></div>
 </div>
 </section>
 
 <section>
 <div class="contact">
 <h2>Book Your Cleaning</h2>
-<p><strong>Starting service:</strong> $55 for two bins</p>
-<p><strong>Recurring plans:</strong> approximately $25–$40 per month depending on service frequency.</p>
-<p>Phone: <a href="tel:6892961540">689-296-1540</a></p>
-<p>WhatsApp: <a href="https://wa.me/16896804924">689-680-4924</a></p>
+<p><strong>First deep cleaning:</strong> $49.99</p>
+<p><strong>Weekly:</strong> $59.99/month &nbsp; | &nbsp; <strong>Every 2 weeks:</strong> $44.99/month &nbsp; | &nbsp; <strong>Monthly:</strong> $34.99/month</p>
+<p><strong>Additional bin:</strong> +$12.99</p>
+<p>Phone: <a href="tel:+14077358047">+1 (407) 735-8047</a></p>
+<p>WhatsApp: <a href="https://wa.me/14077358047">+1 (407) 735-8047</a></p>
 <p>Email: <a href="mailto:saenzjorge046@gmail.com">saenzjorge046@gmail.com</a></p>
 </div>
 </section>
