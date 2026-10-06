@@ -109,6 +109,11 @@ section{max-width:1100px;margin:auto;padding:58px 7%}
 .contact-info a{color:#fff;font-weight:800;background:rgba(255,255,255,.10);padding:12px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.18)}
 .contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px}
 .contact .outline{border:1px solid rgba(255,255,255,.45);color:#fff}
+.stripe-note{text-align:center;color:var(--muted);font-size:13px;margin:18px 0 0}
+.pay-btn{display:block;text-align:center;margin-top:18px;background:var(--blue);color:#fff;border-radius:10px;padding:13px 18px;font-weight:900}
+.pay-btn:hover{filter:brightness(.96)}
+.one-time-action{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.one-time-action .pay-btn{margin-top:0;white-space:nowrap}
 footer{background:#04142c;color:#bdc9d8;text-align:center;padding:24px 7%}
 @media(max-width:820px){
   .hero-inner,.pricing,.steps,.warning-grid,.gallery{grid-template-columns:1fr}
@@ -173,7 +178,10 @@ footer{background:#04142c;color:#bdc9d8;text-align:center;padding:24px 7%}
       <h3>Initial Deep Cleaning</h3>
       <p>A complete first-time deep cleaning and sanitizing service.</p>
     </div>
-    <div class="price">$49.99</div>
+    <div class="one-time-action">
+      <div class="price">$49.99</div>
+      <a class="pay-btn" href="https://buy.stripe.com/3cI6oA7GebmC44Pfeg9Zm00" target="_blank" rel="noopener">Pay $49.99 Securely</a>
+    </div>
   </div>
 
   <div class="pricing">
@@ -186,6 +194,7 @@ footer{background:#04142c;color:#bdc9d8;text-align:center;padding:24px 7%}
         <li>Cleaning + sanitizing</li>
         <li>Helps control odor and buildup</li>
       </ul>
+      <a class="pay-btn" href="https://buy.stripe.com/7sYfZa2lU3Ua0SD5DG9Zm01" target="_blank" rel="noopener">Choose Monthly — $34.99/mo</a>
     </div>
 
     <div class="card featured">
@@ -198,6 +207,7 @@ footer{background:#04142c;color:#bdc9d8;text-align:center;padding:24px 7%}
         <li>Cleaning + sanitizing</li>
         <li>Great for active households</li>
       </ul>
+      <a class="pay-btn" href="https://buy.stripe.com/4gM7sE1hQgGW44P6HK9Zm02" target="_blank" rel="noopener">Choose Every 2 Weeks — $44.99/mo</a>
     </div>
 
     <div class="card">
@@ -209,9 +219,11 @@ footer{background:#04142c;color:#bdc9d8;text-align:center;padding:24px 7%}
         <li>Cleaning + sanitizing</li>
         <li>Best for heavy bin use</li>
       </ul>
+      <a class="pay-btn" href="https://buy.stripe.com/6oUcMYbWu9eudFpaY09Zm03" target="_blank" rel="noopener">Choose Weekly — $59.99/mo</a>
     </div>
   </div>
 
+  <p class="stripe-note">Secure online checkout powered by Stripe. Recurring plans are billed monthly.</p>
   <div class="addon">Additional bin: +$12.99 per service</div>
 </section>
 
