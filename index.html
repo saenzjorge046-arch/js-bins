@@ -28,6 +28,17 @@ header{
 .btn{display:inline-block;border-radius:10px;padding:13px 19px;font-weight:800}
 .btn-primary{background:#fff;color:var(--navy)}
 .btn-blue{background:var(--blue);color:#fff}
+.top-contacts{
+  background:#fff;border-bottom:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  max-width:none;margin:0;padding:0 7%;
+}
+.top-contact{
+  padding:14px 10px;text-align:center;color:var(--navy);font-weight:900;
+  border-right:1px solid var(--line)
+}
+.top-contact:last-child{border-right:0}
+.top-contact span{display:block;font-size:11px;color:var(--muted);letter-spacing:.6px;margin-bottom:2px}
 .hero{
   background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;
   padding:78px 7% 82px
@@ -103,6 +114,9 @@ section{max-width:1100px;margin:auto;padding:58px 7%}
 footer{background:#04142c;color:#bdc9d8;text-align:center;padding:24px 7%}
 @media(max-width:820px){
   .hero-inner,.pricing,.steps,.warning-grid,.gallery{grid-template-columns:1fr}
+  .top-contacts{grid-template-columns:1fr;padding:0}
+  .top-contact{border-right:0;border-bottom:1px solid var(--line);padding:12px}
+  .top-contact:last-child{border-bottom:0}
   .hero h1{font-size:40px}
   .nav a:not(.btn){display:none}
   .one-time{flex-direction:column;align-items:flex-start}
@@ -120,6 +134,12 @@ footer{background:#04142c;color:#bdc9d8;text-align:center;padding:24px 7%}
     <a class="btn btn-primary" href="tel:+14077358047">Call Now</a>
   </nav>
 </header>
+
+<div class="top-contacts">
+  <a class="top-contact" href="tel:+14077358047"><span>PHONE 1</span>+1 (407) 735-8047</a>
+  <a class="top-contact" href="tel:+16892961540"><span>PHONE 2</span>+1 (689) 296-1540</a>
+  <a class="top-contact" href="https://wa.me/16896804924"><span>WHATSAPP</span>+1 (689) 680-4924</a>
+</div>
 
 <div class="hero">
   <div class="hero-inner">
